@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Loved by the King', cursive;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    background-color: pink;
+}
+
+button:active{
+    background-color: #F89FCB;
+    transform: scale(0.8);
+}
+
+.btnTxt{
+    font-size: 30px;
+    color: white;
+}
+
+main{
+    position: fixed;
+    background-color: crimson;
+    width: 300px;
+    height: 400px;
+    display: none;
+    border-radius: 20px 20px 0 0;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main div{
+    margin-top: 20px;
+    
+}
+.txt2{
+    font-size: 50px;
+    color: white;
+}
+.txt3{
+    font-size: 25px;
+    color:gold;
+}
+
+i{
+    font-size: 25px;
+    color:darkgoldenrod;
+    margin-top: 10px;
+}
+
+.fa-xmark{
+    position: relative;
+    bottom:40px;
+    left: 100px;
+    font-size: 30px;
+}
+
+.fa-xmark:active{
+    transform: scale(0.9);
+}
+img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom:0.5px;
+}

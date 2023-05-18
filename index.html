@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55a4ab9ea3.js" crossorigin="anonymous"></script>
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <button id="btn"><div class="btnTxt" id="btnTxt">Press Me</div></button>
+    <main id="main">
+      <i class="fa-solid fa-xmark" style="color: #ffffff;" id="exit"></i>
+      <div class="txt2">Happy Birthday</div>
+      <div class="txt3">Sara Al-jaraihy</div>
+      <i class="fa-solid fa-cake-candles fa-bounce"></i>
+    </main>
+    <script>
+     let btn = document.getElementById('btn');
+     let txt = document.getElementById('btnTxt');
+     let main = document.getElementById('main');
+     let exit = document.getElementById('exit');
+     let counter = 0;
+     btn.addEventListener("click",function fun(){
+     if(counter == 0){
+        txt.innerHTML="Press me again :)";
+        counter++;
+     }
+     else if(counter == 1){
+        txt.innerHTML="One last time";
+        counter++;
+     }
+     else{
+       main.style.display="flex";
+       counter = 0;
+       txt.innerHTML="Press Me";
+     }
+     })
+
+     exit.addEventListener("click",function fun(){
+      main.style.display="none";
+     })
+    </script>
+</body>
+</html>
